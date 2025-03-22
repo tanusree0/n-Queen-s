@@ -9,7 +9,7 @@ function startGame() {
     displayBoard(solution, n);
 }
 
-// Optimized N-Queens solver using bitwise operations
+
 function solveNQueens(n) {
     const results = [];
     const cols = new Set();
@@ -19,8 +19,7 @@ function solveNQueens(n) {
 
     function backtrack(row) {
         if (row === n) {
-            // If we reach the last row, store the solution
-            results.push(board.map(r => r.slice())); // Store the current board state
+            results.push(board.map(r => r.slice())); 
             return;
         }
 
